@@ -46,21 +46,13 @@ const [Mode, setmode] = useState('light')
     }
   return (
     <>  
-<Router>
 <Navbar title="TextUtlis" mode={Mode} toggleMode = {toggleMode}/>
 <Alert alert = {alert} />
 <div className='container my-3'>
-        <Switch>
-        
-          <Route path="/">
 <TextForm  heading = 'Enter text to analyse ' mode={Mode} showAlert = {ShowAlert}/>
-          </Route>
-            {/* <Route path="/About">
             <About />
-          </Route> */}
-        </Switch>
+          
 </div>
-    </Router>
 </>
   )
 }
